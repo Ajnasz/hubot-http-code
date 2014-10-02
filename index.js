@@ -13,34 +13,34 @@
 // Author:
 // Ajnasz
 
+function getCodeMessage(codeObj) {
+	return codeObj.code + ' is ' + codeObj.title + ', ' + codeObj.summary + ' ' + codeObj.descriptions.wikipedia.link;
+}
+
+function getNoCodeMessage(code) {
+	if (code) {
+		return 'No such code: ' + code;
+	}
+
+	return 'No such code';
+}
+
+function getCodeStart(code) {
+	return Math.floor(code / 100);
+}
+
+function getCodesJSON(code) {
+	return require(__dirname + '/codes/' + getCodeStart(code) + '.json').codes[code];
+}
+
+function isValidCode(code) {
+	var start = code ? getCodeStart(code) : null;
+
+	return start >= 1 && start <= 5;
+}
+
 module.exports = function (robot, scripts) {
-	function getCodeMessage(codeObj) {
-		return codeObj.code + ' is ' + codeObj.title + ', ' + codeObj.summary + ' ' + codeObj.descriptions.wikipedia.link;
-	}
-
-	function getNoCodeMessage(code) {
-		if (code) {
-			return 'No such code: ' + code;
-		}
-
-		return 'No such code';
-	}
-
-	function getCodeStart(code) {
-		return Math.floor(code / 100);
-	}
-
-	function getCodesJSON(code) {
-		return require(__dirname + '/codes/' + getCodeStart(code) + '.json').codes[code];
-	}
-
-	function isValidCode(code) {
-		var start = code ? getCodeStart(code) : null;
-
-		return start >= 1 && start <= 5;
-	}
-
-	robot.hear(/http code (\d+)/i, function (msg) {
+	robot.respond(/http code (\d+)/i, function (msg) {
 		var message, code, codeObj;
 
 		code = msg.match[1];
