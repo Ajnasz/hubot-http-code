@@ -26,10 +26,6 @@ module.exports = function (robot, scripts) {
 		return 'No such code';
 	}
 
-	function getMessageWithUserName(request, message) {
-		return '@' + request.user_name + ': ' + message;
-	}
-
 	function getCodeStart(code) {
 		return Math.floor(code / 100);
 	}
@@ -45,7 +41,7 @@ module.exports = function (robot, scripts) {
 	}
 
 	robot.hear(/http code (\d+)/i, function (msg) {
-		var message, code;
+		var message, code, codeObj;
 
 		code = msg.match[1];
 
