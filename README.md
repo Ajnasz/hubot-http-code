@@ -5,4 +5,14 @@ Hubot script that displays information about http status codes. Helpful during A
 
 Usage
 -----
-`hubot http code <code>`
+```sh
+npm install --save hubot-http-code
+```
+
+Open `external-scripts.json` and enable the module, by putting it's name into it:
+
+```javascript
+["your-other", "external-script", "hubot-http-code"]
+```
+
+Then you can use the `hubot http code <code>` command to ask for http code.
