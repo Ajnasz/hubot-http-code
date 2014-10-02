@@ -1,6 +1,6 @@
 {
   "name": "hubot-http-code",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Returns HTTP status code definitions.",
   "main": "index.js",
   "repository": {
