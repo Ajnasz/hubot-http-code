@@ -1,5 +1,3 @@
-###jshint node: true###
-
 # Description:
 #   Displays the description for the requested error code.
 #
@@ -14,6 +12,7 @@
 #
 # Author:
 #   Ajnasz
+
 path = require('path')
 
 getCodeMessage = (codeObj) ->
