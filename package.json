@@ -1,8 +1,8 @@
 {
   "name": "hubot-http-code",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Returns HTTP status code definitions.",
-  "main": "index.js",
+  "main": "index.coffee",
   "repository": {
     "type": "git",
     "url": "https://github.com/Ajnasz/hubot-http-code"
