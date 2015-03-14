@@ -14,6 +14,7 @@
 // Author:
 //   Ajnasz
 
+var path = require('path');
 function getCodeMessage(codeObj) {
 	'use strict';
 	return codeObj.code + ' is ' + codeObj.title + ', ' + codeObj.summary + ' ' + codeObj.descriptions.wikipedia.link;
@@ -35,7 +36,7 @@ function getCodeStart(code) {
 
 function getCodesJSON(code) {
 	'use strict';
-	return require(__dirname + '/codes/' + getCodeStart(code) + '.json').codes[code];
+	return require(path.resolve(__dirname + '/..' + '/codes/' + getCodeStart(code) + '.json')).codes[code];
 }
 
 function isValidCode(code) {
