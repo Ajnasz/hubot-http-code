@@ -1,12 +1,5 @@
-/*jshint node: true*/ 
 // Description:
 //   Displays the description for the requested error code.
-//
-// Dependencies:
-//   None
-//
-// Configuration:
-//   None
 //
 // Commands:
 //   hubot http code <code>
@@ -14,6 +7,7 @@
 // Author:
 //   Ajnasz
 
+/*jshint node: true*/
 var path = require('path');
 function getCodeMessage(codeObj) {
 	'use strict';

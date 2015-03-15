@@ -18,7 +18,7 @@ module.exports = function(robot, scripts) {
 
 			for (i = 0, len = ref.length; i < len; i++) {
 				script = ref[i];
-				if ((scripts !== null) && scripts.indexOf('*') < 0) {
+				if (scripts && scripts.indexOf('*') < 0) {
 					if (scripts.indexOf(script) > -1) {
 						results.push(robot.loadFile(scriptsPath, script));
 					}
