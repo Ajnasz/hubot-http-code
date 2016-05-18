@@ -1,6 +1,6 @@
 {
   "name": "hubot-http-code",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Returns HTTP status code definitions.",
   "main": "index.coffee",
   "repository": {
