@@ -27,7 +27,7 @@ function createMessage(code) {
 describe('HTTP Code hubot command', function() {
 	var httpCode;
 
-	httpCode = require('../index');
+	httpCode = require('../src/http-code');
 
 	it('responds to status code', function() {
 		var message, robot, code;
