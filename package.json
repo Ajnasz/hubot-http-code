@@ -1,6 +1,6 @@
 {
   "name": "hubot-http-code",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Returns HTTP status code definitions.",
   "repository": {
     "type": "git",
@@ -35,15 +35,15 @@
     "test": "mocha tests/index.js"
   },
   "files": [
-	  "package.json",
-	  "index.js",
-	  "LICENSE",
-	  "README.md",
-	  "src/http-code.js",
-	  "codes/1.json",
-	  "codes/2.json",
-	  "codes/3.json",
-	  "codes/4.json",
-	  "codes/5.json"
+    "package.json",
+    "index.js",
+    "LICENSE",
+    "README.md",
+    "src/http-code.js",
+    "codes/1.json",
+    "codes/2.json",
+    "codes/3.json",
+    "codes/4.json",
+    "codes/5.json"
   ]
 }
