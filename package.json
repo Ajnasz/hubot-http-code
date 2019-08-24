@@ -22,8 +22,7 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^1.9.2",
-    "grunt-release": "^0.11.0",
-    "mocha": "^1.21.4",
+    "mocha": "^6.2.0",
     "sinon": "^1.10.3",
     "sinon-chai": "^2.5.0"
   },
